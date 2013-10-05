@@ -1,0 +1,16 @@
+{
+  "$keys": { 
+    "query": "Query",
+    "category": "NewsCategory"
+  },
+  "category": {
+    "business": "rt_Business",
+    "entertainment": "rt_Entertainment",
+    "health": "rt_Health",
+    "politics": "rt_Politics",
+    "sports": "rt_Sports",
+    "US": "rt_US",
+    "world": "rt_World",
+    "science and technology": "rt_ScienceAndTechnology"
+  }
+}
