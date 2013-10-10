@@ -3,7 +3,7 @@ var request = require("request"),
 
 module.exports = function(apiKey) {
   return function(options, next) {
-    var url = 'https://api.datamarket.azure.com/Bing/Search/v1/News?'
+    var url = 'https://api.datamarket.azure.com/Bing/Search/v1/News?',
 
         /* prepare the HTTP Basic Authentication */
         auth = {
