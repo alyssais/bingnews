@@ -13,6 +13,7 @@
    ],
    "author": "Alyssa Ross",
    "license": "BSD-2-Clause",
+   "repository": "https://github.com/alyssais/BingNews.git",
    "dependencies": {
       "request": "~2.27.0"
    }
