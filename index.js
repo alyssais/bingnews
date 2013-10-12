@@ -62,7 +62,7 @@ module.exports = function(apiKey) {
 
               // detect if the value is a date
                   date = new Date(value)
-              if (!isNaN(date.getTime()) { // if the date is valid
+              if (!isNaN(date.getTime())) { // if the date is valid
                 value = date
               }
 
