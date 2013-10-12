@@ -49,8 +49,29 @@ module.exports = function(apiKey) {
       /* append the paremters to the URL */
       url += parameters.join("&")
 
-      request(url, { 'auth': auth }, function(response, error, body) {
-        var articles = JSON.parse(body).d.results
+      request(url, { "auth": auth }, function(error, response, body) {
+        // get the articles into a nice format
+        // the articles come with uppercase keys and __metadata information
+        var articles = JSON.parse(body).d.results.map(function(article) {
+          var processedArtice = {}
+          for (var key in processedArticle) {
+            // _keys are usually request metadata
+            // we don't need them
+            if (key[0] != "_") {
+              var value = article[key],
+
+              // detect if the value is a date
+                  date = new Date(value)
+              if (!isNaN(date.getTime()) { // if the date is valid
+                value = date
+              }
+
+              processedArticle[key.toLowerCase()] = value
+            }
+          }
+          return processedArticle
+        })
+
         next(error, articles)
       })
     })
