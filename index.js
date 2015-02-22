@@ -53,8 +53,8 @@ module.exports = function(apiKey) {
         // get the articles into a nice format
         // the articles come with uppercase keys and __metadata information
         var articles = JSON.parse(body).d.results.map(function(article) {
-          var processedArtice = {}
-          for (var key in processedArticle) {
+          var processedArticle = {}
+          for (var key in article) {
             // _keys are usually request metadata
             // we don't need them
             if (key[0] != "_") {
