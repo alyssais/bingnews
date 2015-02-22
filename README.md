@@ -3,6 +3,11 @@ bingnews
 
 A Node library for getting news data from Bing
 
+Installation
+------------
+
+    npm install bingnews
+
 Usage
 -----
 
