@@ -1,6 +1,6 @@
 {
   "name": "bingnews",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Node library for getting news data from Bing",
   "main": "index.js",
   "scripts": {
