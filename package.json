@@ -15,6 +15,6 @@
   "license": "BSD-2-Clause",
   "repository": "https://github.com/alyssais/BingNews.git",
   "dependencies": {
-    "request": "2.68.0"
+    "request": "2.74.0"
   }
 }
